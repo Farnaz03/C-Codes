@@ -1,13 +1,13 @@
 /* The Collatz conjecture */
 
-/* The Collatz conjecture is applies to positive integers and 
+/* The Collatz conjecture is apply to positive integers and 
 speculates that it is always possible to get “back to 1” if 
 you follow these steps:
-•If nis 1, stop.
-•Otherwise, if nis even, repeat this process on n/2.
-•Otherwise, if nis odd, repeat this process on 3n+ 1.*/
+•If n is 1, stop.
+•Otherwise, if n is even, repeat this process on n/2.
+•Otherwise, if n is odd, repeat this process on 3n+ 1.
 
-//FarnazBaksh - December 2017//
+---FarnazBaksh - December 2017--- */
 
 #include<stdio.h>
 
@@ -31,11 +31,11 @@ int collatz (int n)
     if (n==1)
     	return 0;
     	
-    //even numbers
+	//even numbers
     else if ((n%2)==0)
     	return 1 + collatz(n/2);
     
-    //odd numbers
+	//odd numbers
     else
     	 return 1 + collatz(3*n+1);
     	 
